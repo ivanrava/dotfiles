@@ -14,7 +14,7 @@ wal -i $IMG
 
 # Dunst & Polybar templates
 cp $HOME/.cache/wal/colors.dunst.conf $HOME/.config/dunst/dunstrc.d/colors.conf
-cp $HOME/.cache/wal/config.polybar.ini $HOME/.config/polybar/config.ini
+#cp $HOME/.cache/wal/config.polybar.ini $HOME/.config/polybar/config.ini
 cp $HOME/.cache/wal/colors.Xresources $HOME/.Xresources
 cp $HOME/.cache/wal/colors-rofi-advanced.rasi $HOME/.config/rofi/colors/pywal.rasi
 # Polybar restart
