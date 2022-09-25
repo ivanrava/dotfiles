@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 $HOME/.local/bin/walset
+
+pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.config/polybar/start-polybar.sh
 picom --experimental-backends --backend glx -b -c
 dunst -lf  "${color0:-#ffffff}" \
@@ -16,3 +18,4 @@ thunderbird &
 redshift -l $COORDS &
 udiskie -2 &
 nextcloud --background &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
